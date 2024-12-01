@@ -89,6 +89,7 @@ body {
   background-color: white;
   transition: all 0.35s;
   cursor: pointer;
+  overflow: hidden;
 }
 
 .Card img {
@@ -152,5 +153,9 @@ body {
   .head-title {
     font-size: 28px;
     letter-spacing: 0.5px;
+  }
+  .Card {
+    width: 210px;
+    height: 360px;
   }
 }
