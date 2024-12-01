@@ -148,7 +148,7 @@ body {
   color: white;
 }
 
-@media (width <= 500px) {
+@media (width <= 600px) {
   .head-title {
     font-size: 28px;
     letter-spacing: 0.5px;
