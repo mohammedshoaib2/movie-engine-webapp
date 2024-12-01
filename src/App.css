@@ -1,0 +1,149 @@
+:root {
+  --font-roboto: "Roboto Slab", serif;
+  --font-raleway: "Raleway", sans-serif;
+}
+
+body {
+  font-family: var(--font-roboto);
+  background-color: #212426;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  max-width: 80vw;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  gap: 50px;
+  overflow: hidden;
+}
+
+.head-title {
+  font-size: 48px;
+  letter-spacing: 0.9px;
+  background: linear-gradient(
+    90deg,
+    rgba(249, 211, 180, 1) 0%,
+    rgba(249, 211, 180, 0) 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  width: fit-content;
+}
+
+.input-field-container {
+  width: 70vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  background-color: #212426;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.179);
+  margin: 10px;
+}
+
+.input-field-container img {
+  height: 30px;
+  width: 30px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.input-field {
+  padding: 20px;
+  border: none;
+  outline: none;
+  width: 100%;
+  font-size: 16px;
+  background-color: #212426;
+  color: white;
+  margin: 5px;
+  border-radius: 50px;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.Card {
+  position: relative;
+  width: 310px;
+  height: 460px;
+  margin: 1.6rem;
+  border-radius: 11px;
+  background-color: white;
+  transition: all 0.35s;
+  cursor: pointer;
+}
+
+.Card img {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.movie-info {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  z-index: 10;
+  bottom: 0;
+  width: 100%;
+  padding: 20px;
+  background-color: #333333;
+  border-radius: 0px 0px 10px 10px;
+}
+
+.movie-category {
+  font-family: "Raleway", sans-serif;
+
+  font-size: 13px;
+  letter-spacing: 2px;
+  font-weight: 500;
+  color: #f0f0f0;
+}
+
+.movie-title {
+  font-family: "Roboto Slab", serif;
+  color: #f9d3b4;
+}
+
+.no-result {
+  color: white;
+}
+
+.Card:hover {
+  width: 320px;
+  height: 470px;
+  margin: 1.29rem;
+}
+
+.movie-data {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.movie-year {
+  font-family: "Raleway", sans-serif;
+  font-size: 13px;
+  color: white;
+}
