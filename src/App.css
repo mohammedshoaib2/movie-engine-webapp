@@ -147,3 +147,10 @@ body {
   font-size: 13px;
   color: white;
 }
+
+@media (width <= 500px) {
+  .head-title {
+    font-size: 28px;
+    letter-spacing: 0.5px;
+  }
+}
